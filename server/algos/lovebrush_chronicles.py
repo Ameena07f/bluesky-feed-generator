@@ -4,7 +4,7 @@ from typing import Optional
 from server import config
 from server.database import Post
 
-uri = config.LOVEBRUSH_CHRONICLES_URI
+uri = config.WHATS_ALF_URI
 CURSOR_EOF = 'eof'
 
 
