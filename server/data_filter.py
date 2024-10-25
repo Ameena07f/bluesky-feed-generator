@@ -30,7 +30,151 @@ def operations_callback(ops: defaultdict) -> None:
         )
 
         # only alf-related posts
-        if 'alf' in record.text.lower():
+        if 'Lovebrush Chronicles' in record.text.lower():
+            reply_root = reply_parent = None
+            if record.reply:
+                reply_root = record.reply.root.uri
+                reply_parent = record.reply.parent.uri
+
+            post_dict = {
+                'uri': created_post['uri'],
+                'cid': created_post['cid'],
+                'reply_parent': reply_parent,
+                'reply_root': reply_root,
+            }
+        if 'LBC' in record.text.lower():
+            reply_root = reply_parent = None
+            if record.reply:
+                reply_root = record.reply.root.uri
+                reply_parent = record.reply.parent.uri
+
+            post_dict = {
+                'uri': created_post['uri'],
+                'cid': created_post['cid'],
+                'reply_parent': reply_parent,
+                'reply_root': reply_root,
+            }
+        if 'For All Time' in record.text.lower():
+            reply_root = reply_parent = None
+            if record.reply:
+                reply_root = record.reply.root.uri
+                reply_parent = record.reply.parent.uri
+
+            post_dict = {
+                'uri': created_post['uri'],
+                'cid': created_post['cid'],
+                'reply_parent': reply_parent,
+                'reply_root': reply_root,
+            }
+        if 'Alkaid McGrath' in record.text.lower():
+            reply_root = reply_parent = None
+            if record.reply:
+                reply_root = record.reply.root.uri
+                reply_parent = record.reply.parent.uri
+
+            post_dict = {
+                'uri': created_post['uri'],
+                'cid': created_post['cid'],
+                'reply_parent': reply_parent,
+                'reply_root': reply_root,
+            }
+        if 'Ayn Alwyn' in record.text.lower():
+            reply_root = reply_parent = None
+            if record.reply:
+                reply_root = record.reply.root.uri
+                reply_parent = record.reply.parent.uri
+
+            post_dict = {
+                'uri': created_post['uri'],
+                'cid': created_post['cid'],
+                'reply_parent': reply_parent,
+                'reply_root': reply_root,
+            }
+        if 'Clarence Clayden' in record.text.lower():
+            reply_root = reply_parent = None
+            if record.reply:
+                reply_root = record.reply.root.uri
+                reply_parent = record.reply.parent.uri
+
+            post_dict = {
+                'uri': created_post['uri'],
+                'cid': created_post['cid'],
+                'reply_parent': reply_parent,
+                'reply_root': reply_root,
+            }
+        if 'Lars Rorschach' in record.text.lower():
+            reply_root = reply_parent = None
+            if record.reply:
+                reply_root = record.reply.root.uri
+                reply_parent = record.reply.parent.uri
+
+            post_dict = {
+                'uri': created_post['uri'],
+                'cid': created_post['cid'],
+                'reply_parent': reply_parent,
+                'reply_root': reply_root,
+            }
+        if 'Cael' in record.text.lower():
+            reply_root = reply_parent = None
+            if record.reply:
+                reply_root = record.reply.root.uri
+                reply_parent = record.reply.parent.uri
+
+            post_dict = {
+                'uri': created_post['uri'],
+                'cid': created_post['cid'],
+                'reply_parent': reply_parent,
+                'reply_root': reply_root,
+            }
+        if 'For All Time Otome' in record.text.lower():
+            reply_root = reply_parent = None
+            if record.reply:
+                reply_root = record.reply.root.uri
+                reply_parent = record.reply.parent.uri
+
+            post_dict = {
+                'uri': created_post['uri'],
+                'cid': created_post['cid'],
+                'reply_parent': reply_parent,
+                'reply_root': reply_root,
+            }
+        if '時空の絵旅人' in record.text.lower():
+            reply_root = reply_parent = None
+            if record.reply:
+                reply_root = record.reply.root.uri
+                reply_parent = record.reply.parent.uri
+
+            post_dict = {
+                'uri': created_post['uri'],
+                'cid': created_post['cid'],
+                'reply_parent': reply_parent,
+                'reply_root': reply_root,
+            }
+        if '时空中的绘旅人' in record.text.lower():
+            reply_root = reply_parent = None
+            if record.reply:
+                reply_root = record.reply.root.uri
+                reply_parent = record.reply.parent.uri
+
+            post_dict = {
+                'uri': created_post['uri'],
+                'cid': created_post['cid'],
+                'reply_parent': reply_parent,
+                'reply_root': reply_root,
+            }
+        if '海螺肉' in record.text.lower():
+            reply_root = reply_parent = None
+            if record.reply:
+                reply_root = record.reply.root.uri
+                reply_parent = record.reply.parent.uri
+
+            post_dict = {
+                'uri': created_post['uri'],
+                'cid': created_post['cid'],
+                'reply_parent': reply_parent,
+                'reply_root': reply_root,
+            }
+        if '絵旅人' in record.text.lower():
             reply_root = reply_parent = None
             if record.reply:
                 reply_root = record.reply.root.uri

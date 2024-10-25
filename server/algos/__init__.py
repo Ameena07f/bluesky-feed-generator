@@ -1,5 +1,5 @@
-from . import whats_alf
+from . import lovebrush_chronicles
 
 algos = {
-    whats_alf.uri: whats_alf.handler
+    lovebrush_chronicles.uri: lovebrush_chronicles.handler
 }
