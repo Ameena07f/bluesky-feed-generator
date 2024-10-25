@@ -23,7 +23,7 @@ RECORD_NAME: str = 'lovebrush'
 
 # A display name for your feed
 # Ex: What's Hot
-DISPLAY_NAME: str = 'Lovebrush Chronicles/For All Time'
+DISPLAY_NAME: str = 'Lovebrush Chronicles'
 
 # (Optional) A description of your feed
 # Ex: Top trending content from the whole network
@@ -31,7 +31,7 @@ DESCRIPTION: str = 'This is supposed to collect all LBC/HLR related posts... pow
 
 # (Optional) The path to an image to be used as your feed's avatar
 # Ex: ./path/to/avatar.jpeg
-AVATAR_PATH: str = '"C:\Users\ameen\Pictures\lbc icon.png"'
+AVATAR_PATH: str = 'C:/Users/ameen/Pictures/lbc_icon.jpeg'
 
 # (Optional). Only use this if you want a service did different from did:web
 SERVICE_DID: str = ''
@@ -70,7 +70,7 @@ def main():
     ))
 
     print('Successfully published!')
-    print('Feed URI (put in "WHATS_ALF_URI" env var):', response.uri)
+    print('Feed URI (put in "Lovebrush_Chronicles_URI" env var):', response.uri)
 
 
 if __name__ == '__main__':
