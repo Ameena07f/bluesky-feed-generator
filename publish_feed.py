@@ -14,7 +14,7 @@ PASSWORD: str = 'Zedekian#07f'
 
 # The hostname of the server where feed server will be hosted
 # Ex: feed.bsky.dev
-HOSTNAME: str = 'feed.bsky.dev'
+HOSTNAME: str = '173.63.52.2'
 
 # A short name for the record that will show in urls
 # Lowercase with no spaces.

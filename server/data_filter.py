@@ -21,16 +21,16 @@ def operations_callback(ops: defaultdict) -> None:
         # print all texts just as demo that data stream works
         post_with_images = isinstance(record.embed, models.AppBskyEmbedImages.Main)
         inlined_text = record.text.replace('\n', ' ')
-        logger.info(
+        '''logger.info(
             f'NEW POST '
             f'[CREATED_AT={record.created_at}]'
             f'[AUTHOR={author}]'
             f'[WITH_IMAGE={post_with_images}]'
             f': {inlined_text}'
-        )
+        )'''
 
         # only alf-related posts
-        if 'Lovebrush Chronicles' in record.text.lower():
+        if 'lovebrush chronicles' in record.text.lower():
             reply_root = reply_parent = None
             if record.reply:
                 reply_root = record.reply.root.uri
@@ -42,7 +42,7 @@ def operations_callback(ops: defaultdict) -> None:
                 'reply_parent': reply_parent,
                 'reply_root': reply_root,
             }
-        if 'LBC' in record.text.lower():
+        if 'lbc' in record.text.lower():
             reply_root = reply_parent = None
             if record.reply:
                 reply_root = record.reply.root.uri
@@ -54,7 +54,7 @@ def operations_callback(ops: defaultdict) -> None:
                 'reply_parent': reply_parent,
                 'reply_root': reply_root,
             }
-        if 'For All Time' in record.text.lower():
+        if 'for all time' in record.text.lower():
             reply_root = reply_parent = None
             if record.reply:
                 reply_root = record.reply.root.uri
@@ -66,7 +66,7 @@ def operations_callback(ops: defaultdict) -> None:
                 'reply_parent': reply_parent,
                 'reply_root': reply_root,
             }
-        if 'Alkaid McGrath' in record.text.lower():
+        if 'alkaid mcgrath' in record.text.lower():
             reply_root = reply_parent = None
             if record.reply:
                 reply_root = record.reply.root.uri
@@ -78,7 +78,7 @@ def operations_callback(ops: defaultdict) -> None:
                 'reply_parent': reply_parent,
                 'reply_root': reply_root,
             }
-        if 'Ayn Alwyn' in record.text.lower():
+        if 'ayn alwyn' in record.text.lower():
             reply_root = reply_parent = None
             if record.reply:
                 reply_root = record.reply.root.uri
@@ -90,7 +90,7 @@ def operations_callback(ops: defaultdict) -> None:
                 'reply_parent': reply_parent,
                 'reply_root': reply_root,
             }
-        if 'Clarence Clayden' in record.text.lower():
+        if 'clarence clayden' in record.text.lower():
             reply_root = reply_parent = None
             if record.reply:
                 reply_root = record.reply.root.uri
@@ -102,7 +102,7 @@ def operations_callback(ops: defaultdict) -> None:
                 'reply_parent': reply_parent,
                 'reply_root': reply_root,
             }
-        if 'Lars Rorschach' in record.text.lower():
+        if 'lars rorschach' in record.text.lower():
             reply_root = reply_parent = None
             if record.reply:
                 reply_root = record.reply.root.uri
@@ -114,7 +114,7 @@ def operations_callback(ops: defaultdict) -> None:
                 'reply_parent': reply_parent,
                 'reply_root': reply_root,
             }
-        if 'Cael' in record.text.lower():
+        if 'cael' in record.text.lower():
             reply_root = reply_parent = None
             if record.reply:
                 reply_root = record.reply.root.uri
@@ -126,7 +126,7 @@ def operations_callback(ops: defaultdict) -> None:
                 'reply_parent': reply_parent,
                 'reply_root': reply_root,
             }
-        if 'For All Time Otome' in record.text.lower():
+        if 'for all time otome' in record.text.lower():
             reply_root = reply_parent = None
             if record.reply:
                 reply_root = record.reply.root.uri
